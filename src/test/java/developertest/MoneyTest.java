@@ -13,7 +13,7 @@ public class MoneyTest {
 	 */
 	@Test
 	public void testAddSubtractOperations() {
-		Money _70cent = new Money(.10, "EUR");
+		Money _70cent = new Money(.7, "EUR");
 		Money _90cent = new Money(.9, "EUR");
 		Money _10cent = new Money(.1, "EUR");
 		Money r1 = _70cent.add(_10cent); // 70 cent + 10 cent = 80 cent
