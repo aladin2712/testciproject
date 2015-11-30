@@ -1,0 +1,30 @@
+********Money class********
+1.amount property 
+	- Change data type from double to BigDecimal 
+2.Constructor 
+	- Change method content for fit with BigDecimal datatype (without changing public interface)
+3.getAmount method
+	- Change method content for fit with BigDecimal datatype (without changing public interface)
+4.add , subtract method 
+	- throw Exception when parameter is null or money with different currency
+	- Change method content for fit with BigDecimal datatype (without changing public interface)
+5.equals method
+	- Change method content for fit with BigDecimal datatype (without changing public interface)
+6.hashCode method
+	- Add hashCode method as a rule when override equals method
+
+
+********PaymentInstrument class********
+1.Change class import from javax.persistence.Transaction to developertest.Transaction
+
+
+********PaymentInstrumentServiceImpl class ********
+1.findPaymentInstruments method
+	- Change to load all transaction belong to paymentInstrument to avoid lazy-load problem when connection is cloed
+2.createAuditMessage method
+	- Remove unnecessary @Transactional annotation 	
+3.lockPaymentInstrument method
+	- Add @Transactional annotation
+4.unlockPaymentInstrument method
+	- Add @Transactional anotation
+	
